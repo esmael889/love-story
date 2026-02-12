@@ -13,7 +13,8 @@ if (-not (Test-Path .git)) {
 }
 # Add all files
 Write-Host "Adding files..." -ForegroundColor Cyan
-git add .
+git add -A
+git status
 # Commit
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
 git commit -m "Update Love Story $timestamp"
