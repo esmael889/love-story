@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>💌 For My Ayoya 💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&family=Pacifico&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop><source src="media/music.mp4" type="audio/mp4"></audio>
+    <audio id="finalMusic"><source src="media/final_music.mp4" type="audio/mp4"></audio>
+    
+    <div class="hearts-bg" id="heartsBg"></div>
+    <div class="roses-bg" id="rosesBg"></div>
+    <div id="roseRain"></div>
+    
+    <div class="container">
+        
+        <!-- Screen 1: Envelope -->
+        <div class="screen active" id="screen1">
+            <div class="private-warning">⚠️ رسالة خاصة جداً... فقط لعيون أيويا الحلوة ⚠️</div>
+            <div class="envelope-container" id="envelopeContainer">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body">
+                        <div class="letter">
+                            <div style="font-size: 90px; margin: 20px 0;">💌</div>
+                            <p style="font-size: 28px; font-weight: 700; color: var(--dark-pink);">اضغطي لفتح الرسالة يا قلبي</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p style="margin-top: 35px; font-size: 22px; color: var(--dark-pink); font-weight: 600;">📨 فيه مفاجأة جميلة في انتظارك ✨</p>
+        </div>
+
+        <!-- Screen 2: First Message -->
+        <div class="screen" id="screen2">
+            <div class="letter-paper">
+                <div style="font-size: 80px; margin-bottom: 20px; animation: heartBeat 1.5s infinite;">💝</div>
+                <h2 style="font-family: 'Pacifico', cursive; color: var(--dark-pink); font-size: 42px; margin-bottom: 30px;">To My Ayoya 💕</h2>
+                <p style="font-size: 26px; line-height: 2.2; color: #444; font-weight: 600;">
+                    من أول ما صحيتي النهاردة...<br>
+                    كنت عايز أكون أول واحد يقولك:<br>
+                    <span style="color: var(--dark-pink); font-size: 30px; font-weight: 700;">كل سنة وإنتي حياتي كلها! 🎂</span><br><br>
+                    
+                    جهزتلك مفاجأة من القلب 💝<br>
+                    رحلة في أجمل لحظاتنا سوا 💫<br>
+                    وكلام كتير نفسي أقولهولك 💕<br><br>
+                    
+                    <span style="color: var(--dark-pink); font-size: 28px; font-weight: 700;">يلا نعيش اللحظات دي مع بعض! 💞</span>
+                </p>
+            </div>
+            <button class="cute-btn pulse-btn" onclick="nextScreen(3)">✨ يلا بينا يا حبيبتي</button>
+        </div>
+
+        <!-- Screen 3: Timeline -->
+        <div class="screen" id="screen3">
+            <h1 style="font-family: 'Pacifico', cursive; color: var(--dark-pink); font-size: 46px; margin-bottom: 15px;">Our Love Story 💘</h1>
+            <div style="font-size: 65px; margin: 20px 0; animation: heartBeat 2s infinite;">💑</div>
+            <p style="font-size: 24px; color: #666; margin-bottom: 35px; font-weight: 600;">قصة حب بدأت من هنا... ولسه مكملة للأبد ✨</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">💬</div>
+                    <div class="timeline-date">1-11-2024</div>
+                    <div class="timeline-content">
+                        <p>أول مرة اتكلمنا</p>
+                        <small>اليوم اللي بدأ كل حاجة حلوة 😊</small>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">👫</div>
+                    <div class="timeline-date">23-1-2025</div>
+                    <div class="timeline-content">
+                        <p>أول يوم نتقابل</p>
+                        <small>أول مرة أشوف عينيكي الحلوة 💖</small>
+                    </div>
+                </div>
+                
+                <div class="timeline-item highlight">
+                    <div class="timeline-icon">💍</div>
+                    <div class="timeline-date">27-6-2025</div>
+                    <div class="timeline-content">
+                        <p style="font-size: 28px; font-weight: 700; color: var(--dark-pink);">يوم قراية الفاتحة 🤲</p>
+                        <small>أهم لحظة في حياتنا... اليوم اللي ربطنا ببعض للأبد 💫</small>
+                    </div>
+                </div>
+                
+                <div class="timeline-item highlight">
+                    <div class="timeline-icon">🎂</div>
+                    <div class="timeline-date">12-2-2026</div>
+                    <div class="timeline-content">
+                        <p style="font-size: 30px; font-weight: 800; color: #FF1744;">عيد ميلادك يا أيويا! 🎉</p>
+                        <small>يوم ميلاد أغلى إنسانة عندي في الدنيا 🌟</small>
+                    </div>
+                </div>
+
+                <div class="timeline-item special">
+                    <div class="timeline-icon">💞</div>
+                    <div class="timeline-date">كل يوم ⏰</div>
+                    <div class="timeline-content">
+                        <p style="font-size: 26px; font-weight: 700;">بحبك وبفتكرك وبدعيلك 💕</p>
+                        <small>في كل لحظة... إنتي في بالي وفي قلبي ❤️</small>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="cute-btn bounce-btn" onclick="nextScreen(4)">💝 كملي المفاجأة</button>
+        </div>
+
+        <!-- Screen 4: Birthday Countdown -->
+        <div class="screen" id="screen4">
+            <h1 style="font-family: 'Pacifico', cursive; color: var(--dark-pink); font-size: 46px; margin-bottom: 30px;">Happy Birthday! 🎂</h1>
+            <div id="countdownContainer">
+                <div class="countdown-circle">
+                    <div class="countdown-number" id="countdownNumber">3</div>
+                </div>
+                <p style="font-size: 26px; margin-top: 20px; color: var(--dark-pink); font-weight: 600;">🎁 استعدي للمفاجأة...</p>
+            </div>
+            <div id="birthdayMessage" style="display: none;">
+                <div style="font-size: 110px; margin: 20px 0; animation: spinSlow 4s infinite;">🎂</div>
+                <h2 style="font-size: 36px; color: var(--dark-pink); margin-bottom: 30px; font-family: 'Pacifico', cursive;">كل سنة وإنتي طيبة يا أيويا! 🎉</h2>
+                <p style="font-size: 24px; line-height: 2; margin-bottom: 30px; color: #555; font-weight: 600;">
+                    في يوم ميلادك الجميل ده... 🌸<br>
+                    عايز أقولك إنك أجمل هدية من ربنا ليا 💝<br>
+                    كل لحظة معاكي بتبقى خاصة وجميلة 💫<br>
+                    وكل يوم بحبك أكتر من اليوم اللي قبله 💖<br>
+                    ربنا يخليكي ليا ويديمنا سوا دايماً 🌟
+                </p>
+                <button class="cute-btn wiggle-btn" onclick="nextScreen(5)">🎈 كملي الحفلة!</button>
+            </div>
+        </div>
+
+        <!-- Screen 5: Do You Love Me? -->
+        <div class="screen" id="screen5">
+            <video class="sticker-video" autoplay muted loop playsinline><source src="media/reply_me_love.mp4" type="video/mp4"></video>
+            <h2 class="question-title">بتحبيني؟ 💕</h2>
+            <div class="love-buttons-container">
+                <button class="yes-btn love-btn" id="yesBtn">آه طبعاً ❤️</button>
+                <button class="no-btn love-btn" id="noBtn">لأ 💔</button>
+            </div>
+            <div class="sad-message" id="sadMessage" style="display: none;">
+                <div style="font-size: 80px; margin: 15px 0;">😢</div>
+                <p style="font-size: 24px; color: #666; font-weight: 600;">طب حاولي تاني... يمكن تغيري رأيك 🥺</p>
+            </div>
+        </div>
+
+        <!-- Screen 6: Fill the Heart -->
+        <div class="screen" id="screen6">
+            <h2 style="font-family: 'Pacifico', cursive; color: var(--dark-pink); font-size: 40px; margin-bottom: 20px;">املي قلبي بحبك 💖</h2>
+            <p style="font-size: 22px; color: #666; margin-bottom: 30px; font-weight: 600;">اسحبي القلب لفوق عشان تملي قلبي بحبك الجميل 💕</p>
+            
+            <div id="heartMeterSection">
+                <div class="heart-meter-container">
+                    <canvas id="heartCanvas" width="350" height="350"></canvas>
+                    <div class="love-percentage" id="lovePercentage">0%</div>
+                    <div class="draggable-heart" id="draggableHeart">💖</div>
+                </div>
+                <div class="meter-message" id="meterMessage">اسحبي القلب لفوق! 👆</div>
+            </div>
+            
+            <div id="bigHeartSection" style="display: none;">
+                <div style="font-size: 80px; margin-bottom: 20px; animation: heartBeat 1.5s infinite;">🎉</div>
+                <h2 style="font-size: 38px; color: var(--dark-pink); margin-bottom: 25px; font-family: 'Pacifico', cursive;">قلبي امتلى بحبك! 💖</h2>
+                <canvas id="bigHeartCanvas" width="600" height="600"></canvas>
+                <button class="cute-btn pulse-btn continue-btn" onclick="nextScreen(7)">💝 كملي الرحلة</button>
+            </div>
+        </div>
+
+        <!-- Screen 7: Love Story -->
+        <div class="screen" id="screen7">
+            <h2 style="font-family: 'Pacifico', cursive; color: var(--dark-pink); font-size: 40px; margin-bottom: 20px;">Our Beautiful Beginning 💘</h2>
+            <div class="love-story-box">
+                <!-- Using a placeholder image for now -->
+                <div style="font-size: 100px; margin-bottom: 20px;">💑</div>
+                <!-- <img src="img.png" alt="Us" class="story-img"> -->
+                <p style="font-size: 20px; color: #666; margin-top: 20px; font-weight: 600;">صورتنا واحنا صغيرين... من زمان وإحنا مكتوبين لبعض 💕</p>
+                
+                <div class="story-text">
+                    <p style="font-size: 26px; line-height: 2.2; color: #444; font-weight: 600;">
+                        من أول ما شوفتك... 🌟<br>
+                        عرفت إنك مختلفة عن كل الناس 💫<br><br>
+                        
+                        كل يوم معاكي بيثبتلي إني مش غلطان 💖<br>
+                        إنتي مش بس حبيبتي... إنتي حياتي كلها 💕<br><br>
+                        
+                        كل لحظة بنعيشها سوا بتبقى ذكرى جميلة 🌹<br>
+                        وكل ذكرى بتخليني أحبك أكتر وأكتر ✨<br><br>
+                        
+                        <span style="color: var(--dark-pink); font-size: 28px; font-weight: 700;">بحبك يا أيويا... بحبك أكتر مما تتخيلي 💝</span>
+                    </p>
+                </div>
+            </div>
+            <button class="cute-btn bounce-btn" onclick="nextScreen(8)">📸 شوفي ذكرياتنا الحلوة</button>
+        </div>
+
+        <!-- Screen 8: Memories Swipe -->
+        <div class="screen" id="screen8">
+            <h2 style="font-family: 'Pacifico', cursive; color: var(--dark-pink); font-size: 40px; margin-bottom: 15px;">Our Beautiful Memories 📸</h2>
+            <p style="font-size: 22px; color: #666; margin-bottom: 25px; font-weight: 600;">كل صورة... قصة حب جديدة 💫</p>
+            
+            <div class="swipe-container" id="swipeContainer">
+                <div class="memory-card active" data-index="0">
+                    <div style="background-color: #ffd6e8; height: 370px; display: flex; align-items: center; justify-content: center; border-radius: 18px; font-size: 50px;">🥰</div>
+                    <!-- <img src="img0.jpg" alt="Memory 1"> -->
+                    <div class="memory-caption">
+                        <p>أول ما شوفتها... عرفت إنها حب حياتي 💕</p>
+                        <small>الطفلة اللي كبرت وبقت حبيبة قلبي 👑</small>
+                    </div>
+                </div>
+                <div class="memory-card" data-index="1">
+                    <div style="background-color: #ffd6e8; height: 370px; display: flex; align-items: center; justify-content: center; border-radius: 18px; font-size: 50px;">🌹</div>
+                    <!-- <img src="img1.jpeg" alt="Memory 2"> -->
+                    <div class="memory-caption">
+                        <p>يوم مش هنساه أبداً 🌹</p>
+                        <small>اللحظة دي محفورة في قلبي للأبد 💖</small>
+                    </div>
+                </div>
+                <div class="memory-card" data-index="2">
+                    <div style="background-color: #ffd6e8; height: 370px; display: flex; align-items: center; justify-content: center; border-radius: 18px; font-size: 50px;">✨</div>
+                    <!-- <img src="img2.jpeg" alt="Memory 3"> -->
+                    <div class="memory-caption">
+                        <p>أحلى أوقات معاكي 😊</p>
+                        <small>كل ثانية معاكي بتساوي الدنيا كلها ✨</small>
+                    </div>
+                </div>
+                <!-- Added more cards if needed, but keeping it simple for now -->
+            </div>
+            
+            <div class="swipe-dots" id="swipeDots"></div>
+            <button class="cute-btn next-section-btn" id="nextSectionBtn" style="display: none;" onclick="nextScreen(9)">💌 كملي الرحلة الحلوة</button>
+        </div>
+
+        <!-- Screen 9: Transition -->
+        <div class="screen" id="screen9">
+            <video class="sticker-video" autoplay muted loop playsinline><source src="media/love_me.mp4" type="video/mp4"></video>
+            <h2 style="font-family: 'Pacifico', cursive; color: var(--dark-pink); font-size: 40px; margin-top: 30px;">رسالة من القلب 💌</h2>
+            <p style="font-size: 24px; color: #666; margin-top: 20px; font-weight: 600;">عايز أقولك حاجة مهمة جداً... 💖</p>
+            <button class="cute-btn pulse-btn" onclick="nextScreen(10)" style="margin-top: 30px;">💝 افتحي الرسالة</button>
+        </div>
+
+        <!-- Screen 10: Letter -->
+        <div class="screen" id="screen10">
+            <div class="letter-page">
+                <h2 style="font-family: 'Caveat', cursive; font-size: 42px; color: var(--dark-pink); margin-bottom: 25px;">My Dearest Ayoya 💌</h2>
+                <p style="font-family: 'Caveat', cursive; font-size: 30px; line-height: 2.2; color: #444;">
+                    يا أجمل هدية من ربنا ليا... 🌸<br><br>
+                    
+                    مهما أقول... كل الكلام مش هيوفيكي حقك 💝<br>
+                    بس عايز تعرفي إنك نور حياتي وسبب سعادتي ✨<br>
+                    وأحلى حاجة حصلتلي في الدنيا كلها 🌟<br><br>
+                    
+                    في يوم ميلادك الجميل... 🎂<br>
+                    بتمنالك كل السعادة في الدنيا 💖<br>
+                    كل الأحلام الحلوة تتحقق 🌈<br>
+                    وكل الأيام تبقى جميلة زيك 🌹<br><br>
+                    
+                    <span style="color: var(--dark-pink); font-size: 32px; font-weight: 700;">بحبك يا أيويا... بحبك جداً جداً 💕</span>
+                </p>
+                <p style="font-family: 'Pacifico', cursive; font-size: 30px; color: var(--dark-pink); margin-top: 35px; text-align: left;">
+                    Forever Yours,<br>Mon3m 💝
+                </p>
+            </div>
+            <button class="cute-btn bounce-btn" onclick="nextScreen(11)">🎬 شوف النهاية الحلوة</button>
+        </div>
+
+        <!-- Screen 11: Final -->
+        <div class="screen full-screen cinematic-screen" id="screen11">
+            <div class="cinematic-overlay">
+                <div class="slow-hearts-container" id="slowHeartsContainer"></div>
+                <div class="final-message">
+                    <h1 class="cinematic-title">I Love You Ayoya 💕</h1>
+                    <p class="cinematic-subtitle">Forever & Always ❤️</p>
+                    <div class="signature-box">
+                        <p class="signature-text">~ Mon3m 💝 ~</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
